@@ -14,16 +14,16 @@ function onLoginSubmit(event) {
     paintGreetings(username);
 }
 
-function paintGreetings(username){
-    greeting.innerHTML = `Hello ${username}`
-    greeting.classList.remove(HIDDEN_CLASSNAME);
+function paintGreetings(username){ 
+    greeting.innerHTML = `Hello ${username}` //안의 텍스트 변경해주기 
+    greeting.classList.remove(HIDDEN_CLASSNAME); //appear시켜주기 (아이디가 입력되었으므로)
 } 
 
-const savedUsername = localStorage.getItem(USERNAME_KEY);
+const savedUsername = localStorage.getItem(USERNAME_KEY); //유저네임 저장 (서브밋)
 
-if(savedUsername === null) {
-    loginForm.classList.remove(HIDDEN_CLASSNAME);
-    loginForm.addEventListener("submit", onLoginSubmit);
+if(savedUsername === null) { //유저네임 인풋받은 것이 로컬스토리지에 없으면
+    loginForm.classList.remove(HIDDEN_CLASSNAME); //서브밋 받아주는 폼을 appear시켜주기
+    loginForm.addEventListener("submit", onLoginSubmit); //닉네임 입력받기
 }
 else {
     paintGreetings(savedUsername);
