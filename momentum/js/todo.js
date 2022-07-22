@@ -50,7 +50,3 @@ if(saveTodos){
     parsedToDos.forEach(paintToDo);
 }
 
-function sexyFilter(){
-
-}
-//filter   return true 
