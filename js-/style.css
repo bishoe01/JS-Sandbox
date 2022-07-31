@@ -1,1 +1,11 @@
-font-family: 'Open Sans', sans-serif;
+/* font-family: 'Open Sans', sans-serif; */
+#navbar__logo{
+    object-fit: cover;
+    width: 20px;
+    padding-right: 3px;
+    float: left;
+}
+
+.navbar__menu{
+    
+}
