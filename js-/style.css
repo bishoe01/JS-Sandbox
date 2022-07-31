@@ -16,3 +16,9 @@
     width: 100px;
     height: 100px;
 }
+.job__logo{
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding: 5px;
+}
